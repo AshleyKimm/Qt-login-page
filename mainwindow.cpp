@@ -34,9 +34,10 @@ void MainWindow::button()
                                                                                    " Welcome to Login Management System");
             found = true;
             break;
-        } else if (!found) {
-            QMessageBox::information(this, "Error Box", "invalid username or password");
         }
+    }
+    if (!found) {
+        QMessageBox::information(this, "Error Box", "invalid username or password");
     }
 }
 
